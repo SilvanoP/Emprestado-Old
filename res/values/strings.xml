@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Emprestado</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_save_loan"></string>
+    <string name="item_desc">Descrição do empréstimo</string>
+    <string name="save">Salvar</string>
+    <string name="text_type">Tipo</string>
+    <string name="add">Adicionar</string>
+    <string name="remove">Remover</string>
+    <string name="edit">Editar</string>
+    <string name="search">Buscar</string>
+    <string name="name">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="phone">Telefone</string>
+    
+    <!-- Tabs -->
+    <string name="all_tab">TODOS</string>
+    <string name="borrowed_tab">PEGUEI</string>
+    <string name="lent_tab">EMPRESTEI</string>
+    
+    <!-- Labels -->
+    <string name="item_pic">Tipo de item</string>
+    <string name="contact_data">Quem</string>
+    <string name="text_own">Pegou Emprestado</string>
+    <string name="item_data">O Que</string>
+        
+    <!-- Date related -->
+    <string name="delivery_date">Data de Entrega:</string>
+    <string name="no_date">Devolver em</string>
+    <string name="no_date_list">Sem Data</string>
+    <string name="date_today">Hoje</string>
+    
+    <!-- Date related -->
+
+    <!-- Itens Type -->
+    <string name="BOOK">Livro</string>
+    <string name="MONEY">Dinheiro</string>
+    <string name="CD">CD</string>
+    <string name="DVD">DVD</string>
+    <string name="BLURAY">Blu-ray</string>
+    <string name="OTHER">Outros</string>
+    <!-- End of Itens Type -->
+
+    <string name="title_activity_main">Emprestado</string>
+
+</resources>

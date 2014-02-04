@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.emprestado"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name="br.com.emprestado.controller.AlarmApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:logo="@drawable/ic_launcher_bar"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="br.com.emprestado.view.LentListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="br.com.emprestado.view.SaveLoanActivity"
+            android:label="@string/title_activity_save_loan" >
+        </activity>
+
+        <receiver android:name="br.com.emprestado.controller.services.AlarmSetter" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="br.com.emprestado.controller.services.AlarmReceiver" >
+        </receiver>
+
+        <service android:name="br.com.emprestado.controller.services.SetAlarmService" >
+        </service>
+
+        <activity
+            android:name="br.com.emprestado.view.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

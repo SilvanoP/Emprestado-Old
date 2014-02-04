@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_horizontal">
+    
+    <Button 
+        android:id="@+id/actionbar_button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ok_itens"
+        android:text="@string/save"
+        android:background="@android:color/transparent"/>
+    
+    <View
+        android:id="@+id/actionbar_divider"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@id/actionbar_button_save"
+        android:background="#000000"
+        />
+    
+    <Button 
+        android:id="@+id/actionbar_button_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/actionbar_divider"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/remove"
+        android:text="@string/remove"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>
